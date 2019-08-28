@@ -28,3 +28,9 @@ logging:
     com.wk.mapper: trace
   pattern:
     console: "%d %-5p [%c] - %m%n"
+
+#eurkea注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka

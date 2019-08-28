@@ -12,7 +12,8 @@ import java.util.List;
 @RestController
 public class DeptController {
 
-	private static final String REST_URL_PREFIX = "http://localhost:8001";
+//	private static final String REST_URL_PREFIX = "http://localhost:8001";
+	private static final String REST_URL_PREFIX = "http://PROVIDER";
 
 	@Autowired
 	private RestTemplate restTemplate;
@@ -24,7 +25,7 @@ public class DeptController {
 
 	@RequestMapping("/consummer/dept/get/{deptNo}")
 	public Dept get(@PathVariable("deptNo") Integer deptNo) {
-		return restTemplate.getForObject(REST_URL_PREFIX+"/dept"+deptNo, Dept.class);
+		return restTemplate.getForObject(REST_URL_PREFIX+"/dept/"+deptNo, Dept.class);
 	}
 
 	@RequestMapping("/consummer/dept/get/all")

@@ -8,6 +8,8 @@
         <module>spring_cloud_provider_dept8001</module>
         <module>spring_cloud_consumer_dept80</module>
         <module>spring_cloud_eureka7000</module>
+        <module>spring_cloud_eureka7001</module>
+        <module>spring_cloud_eureka7002</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

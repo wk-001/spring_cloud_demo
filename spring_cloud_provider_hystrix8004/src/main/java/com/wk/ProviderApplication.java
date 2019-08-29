@@ -20,6 +20,13 @@ public class ProviderApplication {
 		SpringApplication.run(ProviderApplication.class,args);
 	}
 
+	/**
+	 * SpringBoot2.0以上需要添加该组件
+	 * hystrixDashboard启动后需要输入的信息：
+	 * 	http://localhost:8004/actuator/hystrix.stream
+	 * 	8004是被监控的添加熔断机制的微服务端口
+	 * @return
+	 */
 	@Bean
 	public ServletRegistrationBean getServlet(){
 		HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();

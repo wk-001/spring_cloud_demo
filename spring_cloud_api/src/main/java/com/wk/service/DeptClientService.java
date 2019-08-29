@@ -1,6 +1,7 @@
 package com.wk.service;
 
 import com.wk.pojo.Dept;
+import com.wk.service.factory.DeptClientServiceFallBackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,7 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "provider")		//指定要调用的provider微服务名称
+//value：指定要调用的provider微服务名称,fallbackFactory：指定服务降级时使用的备选方案工厂
+@FeignClient(value = "provider",fallbackFactory = DeptClientServiceFallBackFactory.class)
 public interface DeptClientService {
 
 	@PostMapping("dept")

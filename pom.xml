@@ -13,6 +13,9 @@
         <module>spring_cloud_provider_dept8002</module>
         <module>spring_cloud_provider_dept8003</module>
         <module>spring_cloud_consumer_feign80</module>
+        <module>spring_cloud_provider_hystrix8004</module>
+        <module>spring_cloud_dashboard9001</module>
+        <module>spring_cloud_zuul9002</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

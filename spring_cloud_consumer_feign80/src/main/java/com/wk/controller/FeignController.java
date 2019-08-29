@@ -22,7 +22,7 @@ public class FeignController {
 	}
 
 	@GetMapping("dept/{id}")
-	public Dept get(@PathVariable int id){
+	public Dept get(@PathVariable("id") int id){
 		return deptClientService.getDept(id);
 	}
 

@@ -15,7 +15,7 @@ public interface DeptClientService {
 	public boolean addDept(Dept dept);
 
 	@GetMapping("dept/{id}")
-	public Dept getDept(@PathVariable int id);
+	public Dept getDept(@PathVariable("id") int id);
 
 	@GetMapping("dept")
 	public List<Dept> getAll();

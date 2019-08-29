@@ -10,6 +10,9 @@
         <module>spring_cloud_eureka7000</module>
         <module>spring_cloud_eureka7001</module>
         <module>spring_cloud_eureka7002</module>
+        <module>spring_cloud_provider_dept8002</module>
+        <module>spring_cloud_provider_dept8003</module>
+        <module>spring_cloud_consumer_feign80</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

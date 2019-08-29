@@ -12,5 +12,13 @@
     <groupId>com.wk</groupId>
     <artifactId>spring_cloud_api</artifactId>
 
+    <dependencies>
+        <!-- feign是对ribbon的封装 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
 
+    </dependencies>
 </project>
